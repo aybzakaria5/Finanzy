@@ -30,6 +30,10 @@
     margin-left: 25rch; /* Margin for logo to push it from the left */
   }
 
+  .logobottom {
+    height: 200px; /* Adjust logo height */
+    margin-left: 25rch; /* Margin for logo to push it from the left */
+  }
   .navigation {
     position: absolute; /* Position absolute for navigation bar */
     left: 500px; /* Adjust distance from left */
@@ -135,11 +139,12 @@
   .footer {
     text-align: center; /* Center align footer content */
     color: #ffffff; /* White text color */
-    margin-top: 20px; /* Margin from top */
+    margin-top: 10px; /* Margin from top */
     padding: 10px 0; /* Vertical padding */
     position: absolute; /* Absolute positioning for bottom center */
     width: 100%; /* Full width */
-    bottom: 0; /* Stick to the bottom */
+    bottom: 100; /* Stick to the bottom */
+    background-color: #021233f8; /* Dark blue background */
   }
 </style>
 </head>
@@ -199,11 +204,12 @@
       <span class="dot" onclick="currentSlide(5)"></span> 
       <span class="dot" onclick="currentSlide(6)"></span> 
     </div>
-  <!-- </div>
+  </div>
 
-  <div class="footer">
-    &copy; Finanzy AYOUB ZAKARYA
-  </div> -->
+  <div class="footer" >
+    <img src="./finlogo-transformed.png" alt="Logo" class="logobottom">
+    &copy; AZ,BN,SM
+  </div>
 
   <script>
     var slideIndex = 1;
