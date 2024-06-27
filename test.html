@@ -14,6 +14,7 @@
 
   .header {
       background-color: #021233f8; 
+      /* background-color: rgba(2, 18, 51, 0.8); */
       padding: 10px; 
       color: #ffffff; 
       display: flex;
@@ -23,6 +24,15 @@
       border: 2px solid #ffffff; /* White border */
       margin: 20px; 
       position: relative; 
+      /* backdrop-filter: blur(1px); /* Blur effect */
+      /* -webkit-backdrop-filter: blur(1px); For Safari */ 
+      /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.08);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
   }
 
   .logo {
