@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Purchase App</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Hire Purchase Application</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Apply for Hire Purchase</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Register</h2>
+            <form id="registrationForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="userRole">Role:</label>
+                <select id="userRole" name="userRole">
+                    <option value="merchant">Merchant</option>
+                    <option value="customer">Customer</option>
+                </select>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="emailLogin">Email:</label>
+                <input type="email" id="emailLogin" name="emailLogin" required>
+                
+                <label for="passwordLogin">Password:</label>
+                <input type="password" id="passwordLogin" name="passwordLogin" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section>
+            <h2>Apply for Hire Purchase</h2>
+            <form id="hirePurchaseForm">
+                <label for="product">Product:</label>
+                <select id="product" name="product"></select>
+                
+                <label for="duration">Duration (months):</label>
+                <input type="number" id="duration" name="duration" required>
+                
+                <button type="submit">Apply</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mubarak Sanni</p>
+    </footer>
+    <script src="{% static 'app.js' %}"></script>
+</body>
+</html>
