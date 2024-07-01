@@ -1,6 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
-import math
+from finanzy.loans.models import Loan
 
 # Create your models here.
 class Payment(models.Model):
