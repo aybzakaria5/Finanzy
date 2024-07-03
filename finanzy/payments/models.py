@@ -1,5 +1,5 @@
 from django.db import models
-from finanzy.loans.models import Loan
+from loans.models import Loan
 
 # Create your models here.
 class Payment(models.Model):
