@@ -1,6 +1,6 @@
 from django.db import models
-from finanzy.customers.models import Customer
-from finanzy.vehicles.models import Vehicle
+from customers.models import Customer
+from vehicles.models import Vehicle
 import math
 
 # Create your models here.
