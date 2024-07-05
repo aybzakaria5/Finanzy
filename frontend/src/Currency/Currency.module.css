@@ -1,0 +1,65 @@
+.exchangeRateContainer {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 20px; /* Adjusted left padding */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 200px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensures children elements don't overflow */
+}
+
+.exchangeRateContainer:hover {
+    background-color: #e0e0e0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    width: 270px;
+    height: 220px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.selector {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ddd;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.selector:hover {
+    background-color: #ccc;
+}
+
+.rate {
+    font-size: 20px;
+    color: green;
+    transition: color 0.3s ease-in-out;
+}
+
+.error {
+    font-size: 20px;
+    color: red;
+    transition: color 0.3s ease-in-out;
+}
+
+.loading {
+    font-size: 20px;
+    color: blue;
+    transition: color 0.3s ease-in-out;
+}
+
