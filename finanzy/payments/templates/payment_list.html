@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payments</title>
+</head>
+<body>
+    <h1>Payments</h1>
+    <ul>
+    {% for payment in payments %}
+        <li><a href="{% url 'payment_detail' payment.id %}">Payment of {{ payment.amount }} on {{ payment.payment_date }}</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

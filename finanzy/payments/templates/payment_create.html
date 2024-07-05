@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Record a Payment</title>
+</head>
+<body>
+    <h1>Record a Payment for {{ loan }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Record Payment</button>
+    </form>
+</body>
+</html>
