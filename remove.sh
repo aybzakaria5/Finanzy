@@ -21,6 +21,18 @@ files=(
     "finanzy/payments/migrations/__pycache__/__init__.cpython-310.pyc"
     "finanzy/reports/migrations/__pycache__/__init__.cpython-310.pyc"
     "finanzy/vehicles/migrations/__pycache__/__init__.cpython-310.pyc"
+    "finanzy/__pycache__/__init__.cpython-310.pyc"
+    "finanzy/__pycache__/settings.cpython-310.pyc"
+    "loans/__pycache__/__init__.cpython-310.pyc"
+    "loans/__pycache__/apps.cpython-310.pyc"
+    "loans/__pycache__/models.cpython-310.pyc"
+    "payments/__pycache__/__init__.cpython-310.pyc"
+    "payments/__pycache__/apps.cpython-310.pyc"
+    "reports/__pycache__/__init__.cpython-310.pyc"
+    "reports/__pycache__/apps.cpython-310.pyc"
+    "vehicles/__pycache__/__init__.cpython-310.pyc"
+    "vehicles/__pycache__/apps.cpython-310.pyc"
+    "vehicles/__pycache__/models.cpython-310.pyc"
     
 )
 
