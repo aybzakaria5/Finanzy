@@ -1,7 +1,7 @@
-from rest_framework import viewsets
+from rest_framework import serializers
 from .models import Customer
-from .serializers import CustomerSerializer
 
-class CustomerViewSet(viewsets.ModelViewSet):
-    queryset = Customer.objects.all()
-    serializer_class = CustomerSerializer
+class CustomerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Customer
+        fields = '__all__'
