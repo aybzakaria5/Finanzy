@@ -1,8 +1,11 @@
-from django.urls import path
-from . import views
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import LoanViewSet
+
+router = DefaultRouter()
+router.register(r'loan', LoanViewSet)
 
 urlpatterns = [
-    path('apply/', views.loan_application, name='loan_application'),
-    path('<int:loan_id>/', views.loan_detail, name='loan_detail'),
-    path('', views.loan_list, name='loan_list'),
+    path('api/', include(router.urls)),
 ]
+
