@@ -1,0 +1,57 @@
+.image{
+    background: url("https://dzazw6ldmby07.cloudfront.net/assets/pages/about/WoodFloorDevice-018948bf3f80034857df2e50b1eae410c79e08f18d9d6f75ec0ef5b403b71f45.jpg") repeat-x center center;
+    background-size: cover;
+    min-height: 300px;
+}
+
+
+.content_about {
+    width: 90vw;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+  
+.content_about h2 {
+    color: #07b798;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+}
+  
+.content_about p,
+.content_about ul,
+.content_about span {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+  
+.content_about ul {
+    padding-left: 20px;
+}
+  
+.content_about span {
+    display: block;
+    font-weight: bold;
+}
+
+
+.content_about em{
+    color: red;
+    font-style: normal;
+}
+  
+@media (min-width: 600px) {
+    .content_about {
+      width: 70vw;
+    }
+}
+  
+@media (min-width: 992px) {
+    .content_about {
+      width: 50vw;
+    }
+}
+  

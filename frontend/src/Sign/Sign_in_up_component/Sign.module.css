@@ -1,0 +1,140 @@
+.divForm {
+    max-width: 400px;
+    margin: 30px auto 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+}
+  
+.Form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.Form label {
+    margin-bottom: 10px;
+    color: #333;
+}
+  
+.Form input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+.Form input:focus{
+    border-color: #000000;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+}
+  
+.Form button {
+    padding: 10px;
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+.Form button:hover {
+    background-color: #000000;
+}
+
+
+
+.message{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.message span{
+   cursor: pointer;
+   font-weight: 600;
+}
+
+
+
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+  
+.divider hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+  
+.divider span {
+    padding: 0 10px;
+    color: #000000; 
+}
+
+
+
+  
+.gg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+  
+.gg button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.6s ease-in-out;
+}
+.btn_google img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+  
+.gg button:hover {
+    background-color: #000;
+    color: #ffff;
+    box-shadow:none;
+}
+  
+  
+
+  
+
+@media (max-width: 600px) {
+    .divForm {
+        padding: 50px 10px 10px 10px;
+        margin-top: 0;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+      
+    .content p {
+        margin: 20px 0 0 0;
+        font-size: 15px;
+    }
+    
+    .Form button {
+        padding: 8px;
+    }
+}

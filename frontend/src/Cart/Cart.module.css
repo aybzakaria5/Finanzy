@@ -1,0 +1,23 @@
+.container{
+    margin:  50px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.title{
+   padding-top: 100px;
+   text-align: center;
+   font-family:Arial, Helvetica, sans-serif;
+
+}
+
+@media screen and (max-width: 993px) {
+    .container{
+        margin: 100px 0;
+    }
+    .title{
+        width: 70vw;
+        margin: 0 auto;
+     }
+}
