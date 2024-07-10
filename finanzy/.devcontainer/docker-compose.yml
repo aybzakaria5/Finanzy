@@ -16,7 +16,7 @@ services:
 
   celery:
     build: .
-    command: celery -A finanzy worker --loglevel=info
+    command: celery -A finanzy worker --loglevel=INFO
     volumes:
       - .:/workspace
     depends_on:
@@ -24,8 +24,9 @@ services:
 
   celery-beat:
     build: .
-    command: celery -A finanzy beat --loglevel=info
+    command: celery -A finanzy beat --loglevel=INFO
     volumes:
       - .:/workspace
     depends_on:
       - redis
+      

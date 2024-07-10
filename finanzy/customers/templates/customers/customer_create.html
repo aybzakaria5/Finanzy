@@ -1,0 +1,7 @@
+<!-- customer_create.html -->
+<h1>Create Customer</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Create</button>
+</form>
