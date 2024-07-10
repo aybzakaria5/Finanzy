@@ -8,4 +8,5 @@ RUN apt-get update && apt-get install -y postgresql-client
 ENV SHELL /bin/bash
 
 # Upgrade pip and install dependencies
-RUN pip install --upgrade pip
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --upgrade pip && pip install -r /tmp/requirements.txt
