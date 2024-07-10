@@ -3,14 +3,18 @@
     "dockerComposeFile": "docker-compose.yml",
     "service": "django",
     "workspaceFolder": "/workspace",
-    "settings": {
-      "terminal.integrated.shell.linux": "/bin/bash"
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
     },
-    "extensions": [
-      "ms-python.python",
-      "ms-python.vscode-pylance"
-    ],
     "postCreateCommand": "pip install -r requirements.txt && python manage.py migrate",
     "remoteUser": "vscode"
-  }
+}
   
