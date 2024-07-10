@@ -1,0 +1,71 @@
+.sign-in-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .sign-in-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sign-in-form label {
+    font-weight: bold;
+  }
+  
+  .sign-in-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .sign-in-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sign-in-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .alternative-sign-in {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .google-sign-in,
+  .facebook-sign-in {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-sign-in {
+    background-color: #db4437;
+    color: white;
+  }
+  
+  .google-sign-in:hover {
+    background-color: #c1351d;
+  }
+  
+  .facebook-sign-in {
+    background-color: #3b5998;
+    color: white;
+  }
+  
+  .facebook-sign-in:hover {
+    background-color: #2d4373;
+  }
+  

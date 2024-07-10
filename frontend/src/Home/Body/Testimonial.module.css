@@ -1,0 +1,86 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.TestimonialSection {
+    width: 100%;
+    max-width: 1200px;
+}
+.Testimonial {
+    padding: 20px;
+    border-radius: 8px;
+}
+.TestimonialInner {
+    overflow: hidden;
+}
+
+.Title {
+    text-align: center;
+    font-family: Playfair Display, "Playfair Display-fallback", Lora, "Lora-fallback", Georgia, serif;
+    font-weight: 800;
+    font-size: 44px;
+    padding-bottom: 40px;
+}
+
+.TestimonialSlider {
+    width: 100%;
+}
+.TestimonialSlide {
+    padding: 10px;
+}
+.TestimonialBox {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.TestimonialBoxTop {
+    text-align: center;
+}
+.TestimonialBoxIcon {
+    font-size: 24px;
+    color: #6c757d;
+}
+.TestimonialBoxImg {
+    margin: 10px 0;
+}
+.TestimonialBoxImg img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.TestimonialBoxName h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #343a40;
+}
+.TestimonialBoxJob p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+@media (max-width: 990px) {
+    .Title{
+        font-size: 35px;
+    }
+}
+@media (max-width: 768px) {
+    .Title{
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .Title{
+        font-size: 25px;
+    }
+    .Container {
+        padding: 0;
+    }
+}
