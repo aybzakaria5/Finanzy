@@ -1,12 +1,10 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 from .models import Loan
 from .forms import LoanForm
-from django.contrib.auth.decorators import login_required
 from rest_framework import viewsets
 from .serializers import LoanSerializer
 
-# Create your views here.
 @login_required
 def loan_application(request):
     if request.method == 'POST':
@@ -29,7 +27,6 @@ def loan_detail(request, loan_id):
 def loan_list(request):
     loans = Loan.objects.filter(customer=request.user.customer)
     return render(request, 'loan_list.html', {'loans': loans})
-
 
 class LoanViewSet(viewsets.ModelViewSet):
     queryset = Loan.objects.all()

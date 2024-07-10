@@ -1,4 +1,3 @@
-# .devcontainer Dockerfile
 FROM mcr.microsoft.com/vscode/devcontainers/python:3.10
 
 # Install PostgreSQL client
@@ -8,5 +7,5 @@ RUN apt-get update && apt-get install -y postgresql-client
 ENV SHELL /bin/bash
 
 # Upgrade pip and install dependencies
-COPY requirements.txt /tmp/requirements.txt
-RUN pip install --upgrade pip && pip install -r /tmp/requirements.txt
+RUN pip install --upgrade pip
+RUN pip install django_extensions==3.1.0 django_filter==2.4.0 celery==5.0 redis==3.5
