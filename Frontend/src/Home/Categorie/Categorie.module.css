@@ -1,0 +1,61 @@
+.title {
+    margin-top: 50px;
+    font-size: 2em;
+    color: #333;
+    font-family: Playfair Display, "Playfair Display-fallback", Lora, "Lora-fallback", Georgia, serif;
+    text-align: center;
+}
+
+
+.container{
+    margin:  0 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.category{
+    width: 18rem;
+    margin-top: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+.category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.btnn {
+    color: #000;
+    margin: 20px 0;
+    padding: 10px 10px;
+    text-decoration: none;
+    
+}
+
+.btnn a {
+    border: 1px solid #000;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.btnn a:hover {
+    background: #000;
+    color: #b69797;
+}
+
+
+@media screen and (max-width: 993px) {
+    .container{
+        margin: 0;
+    }
+    .title{
+        width: 70vw;
+        margin: 0 auto;
+        margin-top: 50px;
+     }
+}
