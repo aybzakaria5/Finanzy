@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "loans",
     "reports",
     "payments",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware"
 ]
 
 ROOT_URLCONF = "finanzy.urls"
@@ -171,3 +173,6 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
 
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+]

@@ -27,3 +27,6 @@ CMD ["serve", "-s", "build", "-l", "3000"]
 
 # Expose port 3000 to the outside world
 EXPOSE 3000
+
+# Install axios
+RUN npm install axios

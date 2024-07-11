@@ -7,3 +7,4 @@ django_extensions==3.1.0
 django_filter==2.4.0
 celery==5.0
 redis==3.5
+django-cors-headers==3.7.0

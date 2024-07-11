@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import Style from './Body.module.css';
 import imageCanva from './canvas.png';
 import Lottie from 'react-lottie';
-import animation_1 from './animation_1.json'
-import animation_2 from './animation_2.json'
-import Tesimonial from './Testimonial'
-import Currency from '../../Currency/Currency'
-import Categorie from '../Categorie/Categorie'
+import animation_1 from './animation_1.json';
+import animation_2 from './animation_2.json';
+import Testimonial from './Testimonial';
+import Currency from '../../Currency/Currency';
+import Category from '../Category/Category';
 
 const Body = () => {
     const testimonials = [
         {
             image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600',
             name: 'Alex Calf',
-            opinion: 'Finanzy plan allowed me to buy a car to transport my gear and reach clients, making my  business thrive.'
+            opinion: 'Finanzy plan allowed me to buy a car to transport my gear and reach clients, making my business thrive.'
         },
         {
             image: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -60,7 +60,6 @@ const Body = () => {
         setCurrentSlide((prevSlide) => (prevSlide === 0 ? testimonials.length - 1 : prevSlide - 1));
     };
 
-
     // parameter of animation
     const defaultOptions1 = {
         loop: true,
@@ -79,50 +78,49 @@ const Body = () => {
         }
     };
 
-
     return (
         <div className={Style.Body}>
             <div className={Style.Container}>
                 <div className={Style.ImageWrapper}>
-                <Lottie options={defaultOptions1}  />
+                    <Lottie options={defaultOptions1} />
                 </div>
                 <div className={Style.Content}>
-                    <h1>Read the Biggest eBooks for Free</h1>
+                    <h1>Buy Now, Pay Later – Simplified</h1>
                     <br />
-                    <p>Receive a daily selection of titles, ranging from bestsellers to hidden gems, all at no cost.</p>
+                    <p>Get your dream car today with Finanzy's flexible payment plans, making it easier for you to manage your finances.</p>
                 </div>
             </div>
             <div className={Style.arrow}>
-                <img src="https://res.cloudinary.com/bookbub/image/upload/f_auto,q_auto/welcome/down-arrow" alt="" />
+                <img src="https://res.cloudinary.com/bookbub/image/upload/f_auto,q_auto/welcome/down-arrow" alt="Down Arrow" />
             </div>
             <div className={Style.Container}>
                 <div className={Style.Content}>
-                    <h1>Discover Personalized eBook Deals</h1>
+                    <h1>Flexible Payment Options</h1>
                     <br />
-                    <p>Tell BookBub what you like to read and receive handpicked deals that match your reading preferences.</p>
+                    <p>Choose from a variety of payment plans that suit your needs and budget, ensuring a smooth car buying experience.</p>
                 </div>
                 <div className={Style.ImageWrapper}>
-                    <Lottie options={defaultOptions2}  width={"400px"} />
+                    <Lottie options={defaultOptions2} width={"400px"} />
                 </div>
             </div>
             <div className={Style.arrow}>
-                <img src="https://res.cloudinary.com/bookbub/image/upload/f_auto,q_auto/welcome/down-arrow" alt="" />
+                <img src="https://res.cloudinary.com/bookbub/image/upload/f_auto,q_auto/welcome/down-arrow" alt="Down Arrow" />
             </div>
             <div className={Style.Container}>
                 <div className={Style.ImageWrapper}>
                     <img src={imageCanva} alt="Canvas" />
                 </div>
                 <div className={Style.Content}>
-                    <h1> Buy Now, Pay Later – Simplified</h1>
+                    <h1>Get Started Today</h1>
                     <br />
-                    <p>Receive a daily selection of titles, ranging from bestsellers to hidden gems, all at no cost.</p>
+                    <p>Sign up with Finanzy and take the first step towards owning your car. Enjoy the freedom and convenience that comes with our hassle-free service.</p>
                 </div>
             </div>
 
-            < Categorie/>
+            <Category />
 
             {/* Testimonials Slider */}
-            <Tesimonial testimonials={testimonials} />
+            <Testimonial testimonials={testimonials} />
             <Currency />
         </div>
     );
