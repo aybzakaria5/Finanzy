@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/usr/src/app/src  # Mount your source code directory
+    environment:
+      - NODE_ENV=production  # Set Node environment to production or as needed
